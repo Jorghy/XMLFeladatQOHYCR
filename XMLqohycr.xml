@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rendeles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaQOHYCR.xsd">
+  <betegek>
+	<beteg taj="001">
+	  <nev>Kiss József</nev>
+	  <lakcím>
+		<irsz>3532</irsz>
+		<varos>Miskolc</varos>
+		<utca>Herman Ottó utca 6</utca>
+	  </lakcím>
+	</beteg>
+	<beteg taj="002">
+	  <nev>Nagy Béla</nev>
+	  <lakcím>
+		<irsz>3532</irsz>
+		<varos>Miskolc</varos>
+		<utca>Thököly utca 16</utca>
+	  </lakcím>
+	</beteg>
+	<beteg taj="003">
+	  <nev>Kovács Jenő</nev>
+	  <lakcím>
+		<irsz>3532</irsz>
+		<varos>Miskolc</varos>
+		<utca>Aranyásó utca 35</utca>
+	  </lakcím>
+	</beteg>
+  </betegek>
+  <vizsgalatok>
+	<vizsgalat ID="1">
+	  <datum>2020.11.29.</datum>
+	  <orvos_neve>DR. Surányi Eszter</orvos_neve>
+	  <idotartam>20</idotartam>
+	</vizsgalat>
+	<vizsgalat ID="2">
+	  <datum>2020.11.29.</datum>
+	  <orvos_neve>DR. Surányi Eszter</orvos_neve>
+	  <idotartam>40</idotartam>
+	</vizsgalat>
+	<vizsgalat ID="3">
+	  <datum>2020.11.29.</datum>
+	  <orvos_neve>DR. Surányi Eszter</orvos_neve>
+	  <idotartam>52</idotartam>
+	</vizsgalat>
+	<vizsgalat ID="4">
+	  <datum>2020.11.30.</datum>
+	  <orvos_neve>DR. Surányi Eszter</orvos_neve>
+	  <idotartam>95</idotartam>
+	</vizsgalat>
+	<vizsgalat ID="5">
+	  <datum>2020.11.30.</datum>
+	  <orvos_neve>DR. Surányi Eszter</orvos_neve>
+	  <idotartam>34</idotartam>
+	</vizsgalat>
+  </vizsgalatok>
+  <betegsegek>
+	<betegseg ID="1">
+	  <betegseg_neve>Torok gyulladás</betegseg_neve>
+	  <veszelyesseg>4</veszelyesseg>
+	  <gyogyulasi_ido>2</gyogyulasi_ido>
+	</betegseg>
+	<betegseg ID="2">
+	  <betegseg_neve>Innhüvely gyulladás</betegseg_neve>
+	  <veszelyesseg>6</veszelyesseg>
+	  <gyogyulasi_ido>3</gyogyulasi_ido>
+	</betegseg>
+  </betegsegek>
+  <gyogyszerek>
+	<gyogyszer ID="1" B_ID="1">
+	  <gyogyszer_neve>Neocitran</gyogyszer_neve>
+	  <gyarto_neve>GlaxoSmithKline-Consumer Kft</gyarto_neve>
+	</gyogyszer>
+	<gyogyszer ID="2" B_ID="1">
+	  <gyogyszer_neve>ACC Long</gyogyszer_neve>
+	  <gyarto_neve>Sandoz Hungária Kft</gyarto_neve>
+	</gyogyszer>
+  </gyogyszerek>
+</rendeles>
