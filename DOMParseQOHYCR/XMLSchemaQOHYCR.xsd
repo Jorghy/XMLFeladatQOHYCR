@@ -1,0 +1,58 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="rendeles">
+  	<xs:complexType>
+  		<xs:sequence>
+  			<xs:element name="beteg" maxOccurs="unbounded" minOccurs="0">
+  				<xs:complexType>
+					<xs:sequence>
+					  <xs:element type="xs:string" name="nev"></xs:element>
+					  <xs:element name="lakcim">
+						<xs:complexType>
+						  <xs:sequence>
+							<xs:element type="xs:byte" name="irsz"></xs:element>
+							<xs:element type="xs:string" name="varos"></xs:element>
+							<xs:element type="xs:string" name="utca"></xs:element>
+						  </xs:sequence>
+						</xs:complexType>
+					  </xs:element>
+					</xs:sequence>
+					<xs:attribute type="xs:byte" name="taj" use="required"></xs:attribute>
+				  </xs:complexType>
+  			</xs:element>
+  			
+  			<xs:element name="vizsgalat" maxOccurs="unbounded" minOccurs="0">
+  				<xs:complexType>
+					<xs:sequence>
+					  <xs:element type="xs:date" name="datum"></xs:element>
+					  <xs:element type="xs:string" name="orvos_neve"></xs:element>
+					  <xs:element type="xs:byte" name="idotartam"></xs:element>
+					</xs:sequence>
+					<xs:attribute type="xs:byte" name="id" use="required"></xs:attribute>
+				  </xs:complexType>
+  			</xs:element>
+  			
+  			<xs:element name="betegseg" maxOccurs="unbounded" minOccurs="0">
+  				<xs:complexType>
+					<xs:sequence>
+					  <xs:element type="xs:string" name="betegseg_neve"></xs:element>
+					  <xs:element type="xs:byte" name="veszelyesseg"></xs:element>
+					  <xs:element type="xs:byte" name="gyogyulasi_ido"></xs:element>
+					</xs:sequence>
+					<xs:attribute type="xs:byte" name="id" use="required"></xs:attribute>
+				  </xs:complexType>
+  			</xs:element>
+  			
+  			<xs:element name="gyogyszer" maxOccurs="unbounded" minOccurs="0">
+  				<xs:complexType>
+					<xs:sequence>
+					  <xs:element type="xs:string" name="gyogyszer_neve"></xs:element>
+					  <xs:element type="xs:string" name="gyarto_neve"></xs:element>
+					</xs:sequence>
+					<xs:attribute type="xs:byte" name="id" use="required"></xs:attribute>
+					<xs:attribute type="xs:byte" name="b_id" use="required"></xs:attribute>
+				  </xs:complexType>
+  			</xs:element>
+  		</xs:sequence>
+  	</xs:complexType>
+  </xs:element>
+</xs:schema>
